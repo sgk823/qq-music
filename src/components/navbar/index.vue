@@ -42,6 +42,21 @@ nav li {
   line-height: 90px;
   padding: 0 20px;
   margin: 0;
+
+  &:nth-of-type(3) {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 18px;
+      right: 3px;
+      width: 37px;
+      height: 14px;
+      background: url(./imgs/mark.png) no-repeat;
+      background-size: cover;
+    }
+  }
 }
 
 .active {
